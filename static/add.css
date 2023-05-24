@@ -1,0 +1,64 @@
+.cont{
+	display: flex;
+	flex-direction: column;
+	gap:1rem;
+	width: 400px;
+}
+form{
+display: flex;
+	flex-direction: column;
+	gap:1rem;
+}
+input,textarea{
+	outline: none;
+}
+form input{
+	height: 50px;
+	width: 100%;
+	text-indent: 16px;
+	font-size: 20px;
+	background: transparent;
+	border:1px solid #ffffff;
+	padding:20px 10px;
+	color: #ffffff;
+	transition: all 500ms ease-in-out;
+
+
+}
+form textarea{
+	width: 100%;
+	font-size: 20px;
+	resize: none;
+	height: 400px;
+	padding: 10px;
+	background: transparent;
+	border:1px solid #ffffff;
+	padding:20px 10px;
+	color: #ffffff;
+	font-size: 16px;
+
+	transition: all 500ms ease-in-out;
+
+}
+form input:hover{
+	width: 120%;
+	border-right :5px solid limegreen;
+}
+form textarea:hover{
+	width: 120%;
+	border-right :5px solid yellow;
+	font-family: system-ui;
+	font-size: 16px;
+	
+}
+.add_btn:hover{
+	background: #111;
+	color:#fff;
+	box-shadow: none;
+	outline: 1px solid #ffffff;
+}
+
+input::placeholder{
+	color:#ffffff;
+	font-size: 20px;
+}

@@ -1,0 +1,26 @@
+
+<html>
+<head>
+	<link rel="stylesheet" href=' {{ url_for("static", filename = "index.css" ) }} '>
+</head>
+<body>
+<div class = "cont">
+
+<h1>Welcome to my Blog</h1>
+		
+
+	<div class="blog_showcase_cont">
+		{% for i in articles %}
+		<a href="http://127.0.0.1:5001/blog/{{ i['id'] }}">
+		<div class="blog_card">
+			<p>{{ i['article_title'] }}</p>
+			<small> {{ i['article_author']}} </small>
+		</div>
+		</a>
+		{%  endfor  %}
+	
+	</div>
+	<a class="add_btn" href="http://127.0.0.1:5001/add_page"> Add an article </a>	
+</div>
+</body>
+<html>

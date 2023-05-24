@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=' {{ url_for("static", filename = "index.css" ) }} '>
+	<link rel="stylesheet" href=' {{ url_for("static", filename = "blog.css" ) }} '>
+	<title>Blog</title>
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+<div class="cont">
+<a class="add_btn" href='http://127.0.0.1:5001/'>Return to home </a>	
+<h1>{{article['article_title'] }}</h1>
+<small> {{ article['article_author']  }} </small>
+	<br>
+
+<hr>
+
+	<br>
+<p>
+	{{article['article_content']  }}
+</p>
+</div>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

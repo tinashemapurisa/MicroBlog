@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=' {{ url_for("static", filename = "index.css" ) }} '>
+	<link rel="stylesheet" href=' {{ url_for("static", filename = "add.css" ) }} '>
+
+	<title>Add Blog</title>
+</head>
+<body>
+	<br>
+	<br>
+	
+<div class="cont">
+
+	<h1>Add your article here </h1>
+<form action="http://127.0.0.1:5001/add" method="post" class="form container py-4 px-5">
+		<input type="text"  class="title" id="title" name="title" placeholder="Title" ></input>
+		<input type="text"  class="author" id="author" placeholder="Author "  name="author" ></input>
+
+        <textarea type="text" class="form-control" id="article" placeholder="Enter content " name="article" ></textarea>
+
+        <button class="add_btn" type="submit" class="btn btn-sm btn-success">Add Article</button>
+
+    </form>
+    <br>
+    <a class="add_btn" href='http://127.0.0.1:5001/'>Return to home </a>	
+	<br>
+	<br>
+	<br>
+</div>
+</body>
+</html>
